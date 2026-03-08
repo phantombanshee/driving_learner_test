@@ -7,39 +7,21 @@ answer: 1
 },
 
 {
-question: "After overtaking another vehicle what should a driver do?",
-options: ["Stay in right lane","Return to original lane","Stop immediately","Increase speed"],
-answer: 1
-},
-
-{
-question: "What does a solid white or yellow line indicate?",
-options: ["Parking allowed","Overtaking allowed","Do not cross the line","Pedestrian crossing"],
-answer: 2
-},
-
-{
-question: "Driving over painted traffic islands is:",
-options: ["Always allowed","Allowed during traffic","Prohibited except obstruction","Allowed for bikes"],
-answer: 2
-},
-
-{
-question: "Vehicles in India must drive on which side?",
+question: "Vehicles in India must drive on which side of the road?",
 options: ["Right","Left","Middle","Either side"],
 answer: 1
 },
 
 {
-question: "Maximum speed near schools unless directed otherwise?",
-options: ["20 km/h","25 km/h","40 km/h","50 km/h"],
-answer: 1
+question: "What does a solid white line on the road indicate?",
+options: ["Parking allowed","Overtaking allowed","Do not cross","Pedestrian crossing"],
+answer: 2
 },
 
 {
-question: "Which vehicles may exceed speed limits during emergencies?",
-options: ["Private cars","Motorcycles","Emergency vehicles with sirens","Government vehicles"],
-answer: 2
+question: "What is the maximum speed near schools unless otherwise indicated?",
+options: ["20 km/h","25 km/h","40 km/h","50 km/h"],
+answer: 1
 },
 
 {
@@ -61,158 +43,74 @@ answer: 1
 },
 
 {
-question: "At a give way sign you must:",
-options: ["Stop","Slow and give priority","Speed up","Ignore sign"],
-answer: 1
-},
-
-{
-question: "Which vehicles have right of way?",
-options: ["Buses","Trucks","Emergency vehicles","Private cars"],
+question: "Which vehicles always have right of way?",
+options: ["Buses","Trucks","Emergency vehicles with sirens","Cars"],
 answer: 2
 },
 
 {
-question: "At unguarded railway crossing drivers must:",
-options: ["Drive fast","Stop and check for trains","Honk continuously","Ignore crossing"],
+question: "At an unguarded railway crossing you must:",
+options: ["Speed up","Stop and check for trains","Honk continuously","Ignore"],
 answer: 1
 },
 
 {
-question: "Vehicles inside roundabout have:",
-options: ["No priority","Right of way","Must stop","Reverse"],
+question: "Vehicles inside a roundabout have:",
+options: ["No priority","Right of way","Must stop","Must reverse"],
 answer: 1
 },
 
 {
-question: "How should driver indicate overtaking?",
-options: ["Long horn","Short horn or headlights","Hazard lights","Turn off lights"],
+question: "Overtaking is prohibited near:",
+options: ["Straight roads","Bends and intersections","Highways","Wide roads"],
 answer: 1
-},
-
-{
-question: "Overtaking is prohibited:",
-options: ["Highways","Near bends","Straight roads","Wide roads"],
-answer: 1
-},
-
-{
-question: "Vehicle being overtaken must:",
-options: ["Speed up","Block overtaking","Allow safe overtaking","Stop immediately"],
-answer: 2
 },
 
 {
 question: "Horns should be used:",
-options: ["Continuously","Only when necessary","At intersections","Always"],
+options: ["Continuously","Only when necessary","At every turn","In silence zones"],
 answer: 1
 },
 
 {
-question: "Excessive horn use is:",
-options: ["Encouraged","Allowed","Prohibited","Mandatory"],
+question: "Using mobile phone while driving is:",
+options: ["Allowed","Allowed at signals","Prohibited","Allowed highways"],
 answer: 2
-},
-
-{
-question: "Manual signals are used when:",
-options: ["Traffic heavy","Indicators fail","Driving fast","Driving slow"],
-answer: 1
-},
-
-{
-question: "Drivers must carry:",
-options: ["Driving license","Insurance","Registration","All of the above"],
-answer: 3
 },
 
 {
 question: "Parking is prohibited:",
-options: ["Near bends","Near crossings","Bus stops","All of the above"],
+options: ["Near bends","At bus stops","Near crossings","All of the above"],
 answer: 3
 },
 
 {
-question: "On hill roads which vehicle gets priority?",
-options: ["Downhill","Uphill","Bigger vehicle","Faster vehicle"],
+question: "On hill roads which vehicle has priority?",
+options: ["Downhill vehicle","Uphill vehicle","Bigger vehicle","Faster vehicle"],
 answer: 1
 },
 
 {
-question: "Using handheld mobile while driving is:",
-options: ["Allowed","Allowed at signal","Prohibited","Allowed highways"],
-answer: 2
+question: "Flashing red traffic signal means:",
+options: ["Stop and proceed if safe","Go immediately","Ignore signal","Turn"],
+answer: 0
 },
 
 {
-question: "Drivers must slow down for:",
-options: ["Pedestrians","Children","Cyclists","All of the above"],
-answer: 3
-},
-
-{
-question: "Vehicles must not drive on:",
-options: ["Footpaths","Cycle tracks","Pedestrian lanes","All of the above"],
-answer: 3
-},
-
-{
-question: "When merging onto major road:",
-options: ["Speed up","Give way to traffic","Stop fully","Ignore traffic"],
-answer: 1
-},
-
-{
-question: "Continuous red traffic light means:",
-options: ["Go","Stop","Slow down","Turn"],
+question: "Flashing amber traffic signal means:",
+options: ["Stop","Proceed with caution","Reverse","Turn"],
 answer: 1
 },
 
 {
 question: "Green traffic light means:",
-options: ["Stop","Go if clear","Turn left","Slow"],
+options: ["Stop","Go if clear","Slow down","Turn"],
 answer: 1
 },
 
 {
-question: "Flashing red light means:",
-options: ["Stop then proceed","Go","Ignore","Turn"],
-answer: 0
-},
-
-{
-question: "Flashing amber light means:",
-options: ["Stop","Proceed cautiously","Turn","Reverse"],
-answer: 1
-},
-
-{
-question: "Green arrow signal means:",
-options: ["Stop","Move indicated direction","Reverse","Slow"],
-answer: 1
-},
-
-{
-question: "Inside tunnels drivers must:",
-options: ["Use high beam","Use dim lights","Stop","Overtake"],
-answer: 1
-},
-
-{
-question: "Overtaking inside tunnels is:",
-options: ["Allowed","Prohibited","Allowed bikes","Allowed cars"],
-answer: 1
-},
-
-{
-question: "Reversing inside tunnels is:",
-options: ["Allowed","Prohibited","Sometimes","Emergency only"],
-answer: 1
-},
-
-{
-question: "After accident driver should:",
-options: ["Leave scene","Call police and medical help","Hide vehicle","Ignore"],
+question: "Red traffic light means:",
+options: ["Go","Stop","Turn left","Reverse"],
 answer: 1
 },
 
@@ -223,104 +121,38 @@ answer: 2
 },
 
 {
-question: "Following distance should increase during:",
-options: ["Good weather","Night","Adverse weather","Empty roads"],
-answer: 2
-},
-
-{
-question: "Registration plates must display:",
-options: ["Decorations","Vehicle number only","Owner name","Logo"],
-answer: 1
-},
-
-{
-question: "Drivers must be:",
-options: ["Tired","Drunk","Mentally and physically fit","Distracted"],
-answer: 2
-},
-
-{
-question: "Pedestrians should be given:",
-options: ["Warning","Priority","Horns","Ignore"],
-answer: 1
-},
-
-{
-question: "Drivers must obey:",
-options: ["Friends","Traffic police","Passengers","Mechanics"],
-answer: 1
-},
-
-{
-question: "Indicators should be used:",
-options: ["After turn","Before turn","Never","Only highway"],
-answer: 1
-},
-
-{
-question: "At intersection without signals:",
-options: ["Speed up","Give way to right","Stop always","Ignore"],
-answer: 1
-},
-
-{
-question: "Emergency vehicles use:",
-options: ["Music","Sirens","Lights only","Nothing"],
+question: "Indicators must be used:",
+options: ["After turning","Before turning","Never","Only highway"],
 answer: 1
 },
 
 {
 question: "Driving under influence is:",
-options: ["Allowed","Dangerous and illegal","Encouraged","Allowed night"],
+options: ["Allowed","Illegal","Recommended","Safe"],
 answer: 1
 },
 
 {
-question: "Seat belts reduce:",
-options: ["Fuel use","Injury risk","Speed","Traffic"],
+question: "Pedestrians must be given:",
+options: ["Warning","Priority","Horns","Ignore"],
 answer: 1
 },
 
 {
-question: "Helmet protects:",
-options: ["Hands","Head","Feet","Eyes"],
-answer: 1
-},
-
-{
-question: "Drivers should avoid:",
-options: ["Distractions","Mirrors","Brakes","Indicators"],
+question: "Children crossing the road require:",
+options: ["Care","Speed","Ignoring","Horns"],
 answer: 0
 },
 
 {
-question: "Children crossing road require:",
-options: ["Speed","Care","Ignoring","Horns"],
-answer: 1
-},
-
-{
-question: "Drivers must respect:",
-options: ["Pedestrians","Cyclists","Animals","All"],
-answer: 3
-},
-
-{
-question: "Using headlights at night:",
-options: ["Required","Optional","Illegal","Avoid"],
-answer: 0
-},
-
-{
-question: "Speed limits are:",
-options: ["Optional","Legal requirements","Suggestions","Irrelevant"],
+question: "Drivers must obey:",
+options: ["Passengers","Traffic police","Friends","Mechanics"],
 answer: 1
 },
 
 {
 question: "Driving safely means:",
-options: ["Fast","Responsible","Aggressive","Careless"],
+options: ["Aggressive","Responsible","Fast","Careless"],
 answer: 1
 },
 
@@ -334,7 +166,89 @@ answer: 0
 question: "Following traffic rules prevents:",
 options: ["Accidents","Travel","Driving","Vehicles"],
 answer: 0
+},
+
+{
+question: "Registration plates must display:",
+options: ["Decorations","Vehicle number only","Owner name","Logo"],
+answer: 1
+},
+
+{
+question: "Manual signals are used when:",
+options: ["Indicators fail","Traffic heavy","Driving fast","Driving slow"],
+answer: 0
+},
+
+{
+question: "Drivers should avoid:",
+options: ["Distractions","Mirrors","Brakes","Indicators"],
+answer: 0
+},
+
+{
+question: "Vehicles must not drive on:",
+options: ["Footpaths","Cycle tracks","Pedestrian lanes","All of the above"],
+answer: 3
+},
+
+{
+question: "Speed limits are:",
+options: ["Optional","Legal requirements","Suggestions","Irrelevant"],
+answer: 1
+},
+
+{
+question: "Headlights at night are:",
+options: ["Optional","Required","Illegal","Avoid"],
+answer: 1
+},
+
+{
+question: "Emergency vehicles use:",
+options: ["Music","Sirens","Lights only","Nothing"],
+answer: 1
+},
+
+{
+question: "Overtaking should be done from:",
+options: ["Left","Right","Either side","Middle"],
+answer: 1
+},
+
+{
+question: "Drivers must slow down near:",
+options: ["Schools","Hospitals","Construction zones","All of the above"],
+answer: 3
+},
+
+{
+question: "Driving on footpaths is:",
+options: ["Allowed","Prohibited","Allowed bikes","Allowed cars"],
+answer: 1
+},
+
+{
+question: "Seat belts reduce:",
+options: ["Fuel use","Injury risk","Speed","Traffic"],
+answer: 1
+},
+
+{
+question: "Helmets protect:",
+options: ["Hands","Head","Feet","Eyes"],
+answer: 1
+},
+
+{
+question: "Road markings are used to:",
+options: ["Decorate road","Guide drivers","Stop vehicles","Confuse drivers"],
+answer: 1
 }
 
 ];
 
+// duplicate questions to ensure at least 120 available
+while(questions.length < 120){
+questions.push({...questions[questions.length % 40]});
+}
