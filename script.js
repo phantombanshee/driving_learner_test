@@ -1,15 +1,15 @@
 let quizLength = parseInt(localStorage.getItem("quizLength")) || 25
 
-// Shuffle all questions
+// Shuffle questions
 let shuffledQuestions = [...questions].sort(() => Math.random() - 0.5)
 
-// Select the number chosen on the home page
+// Select number of questions
 shuffledQuestions = shuffledQuestions.slice(0, quizLength)
 
 let currentQuestion = 0
 let score = 0
 
-const optionLabels = ["A", "B", "C", "D"]
+const optionLabels = ["A","B","C","D"]
 
 function loadQuestion(){
 
@@ -52,11 +52,10 @@ currentQuestion++
 
 if(currentQuestion >= shuffledQuestions.length){
 
-document.querySelector(".container").innerHTML = `
-<h2>Quiz Finished</h2>
+document.querySelector(".container").innerHTML =
+`<h2>Quiz Finished</h2>
 <p>Your Score: ${score} / ${quizLength}</p>
-<button onclick="location.href='index.html'">Restart</button>
-`
+<button onclick="location.href='index.html'">Restart</button>`
 
 }else{
 
@@ -74,36 +73,4 @@ document.getElementById("scoreboard").innerText =
 }
 
 // Start quiz
-loadQuestion()
-if(index === shuffledQuestions[currentQuestion].answer){
-score++
-}
-
-nextQuestion()
-}
-
-function nextQuestion(){
-
-currentQuestion++
-
-if(currentQuestion >= shuffledQuestions.length){
-
-document.querySelector(".container").innerHTML =
-"<h2>Quiz Finished</h2><p>Your Score: "+score+" / "+quizLength+"</p><button onclick='location.href="index.html"'>Restart</button>"
-
-}else{
-
-loadQuestion()
-
-}
-
-}
-
-function updateScoreboard(){
-
-document.getElementById("scoreboard").innerText =
-"Score: " + score + " / " + quizLength
-
-}
-
 loadQuestion()
