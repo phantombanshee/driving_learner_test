@@ -3,69 +3,94 @@ let quizLength = parseInt(localStorage.getItem("quizLength")) || 25;
 // shuffle questions
 let shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
 
-// take the selected number
+// select quiz length
 shuffledQuestions = shuffledQuestions.slice(0, quizLength);
 
 let currentQuestion = 0;
 let score = 0;
+let selectedAnswer = null;
 
 const optionLabels = ["A","B","C","D"];
 
-function loadQuestion() {
+function loadQuestion(){
 
-    let q = shuffledQuestions[currentQuestion];
+let q = shuffledQuestions[currentQuestion];
 
-    document.getElementById("question").innerText =
-        (currentQuestion + 1) + ". " + q.question;
+document.getElementById("question").innerText =
+(currentQuestion + 1) + ". " + q.question;
 
-    let optionsHTML = "";
+document.getElementById("progress").innerText =
+"Question " + (currentQuestion + 1) + " / " + quizLength;
 
-    q.options.forEach((opt,index) => {
+let optionsHTML = "";
 
-        optionsHTML += `
-        <button class="option" onclick="selectAnswer(${index})">
-        ${optionLabels[index]}. ${opt}
-        </button>
-        `;
+q.options.forEach((opt,index)=>{
 
-    });
+optionsHTML += `
+<button class="option" onclick="selectAnswer(${index}, this)">
+${optionLabels[index]}. ${opt}
+</button>
+`;
 
-    document.getElementById("options").innerHTML = optionsHTML;
+});
 
-    updateScoreboard();
+document.getElementById("options").innerHTML = optionsHTML;
+
+document.getElementById("nextBtn").disabled = true;
+
+updateScoreboard();
+
 }
 
-function selectAnswer(index) {
+function selectAnswer(index, element){
 
-    if(index === shuffledQuestions[currentQuestion].answer){
-        score++;
-    }
+selectedAnswer = index;
 
-    nextQuestion();
+let buttons = document.querySelectorAll(".option");
+
+buttons.forEach(btn => btn.style.background = "white");
+
+element.style.background = "#d0ebff";
+
+document.getElementById("nextBtn").disabled = false;
+
 }
 
-function nextQuestion() {
+function nextQuestion(){
 
-    currentQuestion++;
-
-    if(currentQuestion >= shuffledQuestions.length){
-
-        document.querySelector(".container").innerHTML =
-        `<h2>Quiz Finished</h2>
-        <p>Your Score: ${score} / ${quizLength}</p>
-        <button onclick="location.href='index.html'">Restart</button>`;
-
-    } else {
-
-        loadQuestion();
-    }
+if(selectedAnswer === shuffledQuestions[currentQuestion].answer){
+score++;
 }
 
-function updateScoreboard() {
+currentQuestion++;
+selectedAnswer = null;
 
-    document.getElementById("scoreboard").innerText =
-        "Score: " + score + " / " + quizLength;
+if(currentQuestion >= shuffledQuestions.length){
+
+let percent = Math.round((score/quizLength)*100);
+
+let result = percent >= 70 ? "PASS" : "FAIL";
+
+document.querySelector(".container").innerHTML = `
+<h2>Quiz Finished</h2>
+<p>Your Score: ${score} / ${quizLength}</p>
+<h3>${result}</h3>
+<button onclick="location.href='index.html'">Restart</button>
+`;
+
+}else{
+
+loadQuestion();
+
 }
 
-// start quiz
+}
+
+function updateScoreboard(){
+
+document.getElementById("scoreboard").innerText =
+"Score: " + score + " / " + quizLength;
+
+}
+
 loadQuestion();
