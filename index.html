@@ -2,18 +2,30 @@
 <html>
 <head>
 <title>Learner Permit Practice Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>Learner Permit Practice Test</h1>
+<p>Select number of questions</p>
 
-<p>Practice traffic rules for the learner license exam.</p>
+<button onclick="startQuiz(25)">25 Questions</button>
+<button onclick="startQuiz(50)">50 Questions</button>
+<button onclick="startQuiz(75)">75 Questions</button>
+<button onclick="startQuiz(100)">100 Questions</button>
 
-<a href="quiz.html">
-<button>Start Quiz</button>
-</a>
+</div>
+
+<script>
+function startQuiz(num){
+localStorage.setItem("quizLength", num)
+window.location.href = "quiz.html"
+}
+</script>
 
 </body>
 </html>
