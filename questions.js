@@ -247,8 +247,3 @@ answer: 1
 }
 
 ];
-
-// duplicate questions to ensure at least 120 available
-while(questions.length < 120){
-questions.push({...questions[questions.length % 40]});
-}
