@@ -338,7 +338,3 @@ answer: 0
 
 ];
 
-// automatically duplicate questions until 100 if needed
-while(questions.length < 100){
-questions.push({...questions[questions.length % 50]});
-}
