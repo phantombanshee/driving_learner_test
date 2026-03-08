@@ -1,61 +1,54 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2867
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+let currentQuestion = 0
+let score = 0
 
-\f0\fs24 \cf0 let currentQuestion = 0\
-let score = 0\
-\
-function loadQuestion()\{\
-\
-let q = questions[currentQuestion]\
-\
-document.getElementById("question").innerText = q.question\
-\
-let optionsHTML = ""\
-\
-q.options.forEach((opt,index)=>\{\
-\
-optionsHTML += `\
-<button onclick="selectAnswer($\{index\})">\
-$\{opt\}\
-</button><br><br>\
-`\
-\
-\})\
-\
-document.getElementById("options").innerHTML = optionsHTML\
-\
-\}\
-\
-function selectAnswer(index)\{\
-\
-if(index === questions[currentQuestion].answer)\{\
-score++\
-\}\
-\
-nextQuestion()\
-\
-\}\
-\
-function nextQuestion()\{\
-\
-currentQuestion++\
-\
-if(currentQuestion >= questions.length)\{\
-\
-alert("Your Score: "+score)\
-\
-location.reload()\
-\
-\}else\{\
-\
-loadQuestion()\
-\
-\}\
-\
-\}\
-\
-loadQuestion()}
+function loadQuestion(){
+
+let q = questions[currentQuestion]
+
+document.getElementById("question").innerText = q.question
+
+let optionsHTML = ""
+
+q.options.forEach((opt,index)=>{
+
+optionsHTML += `
+<button onclick="selectAnswer(${index})">
+${opt}
+</button><br><br>
+`
+
+})
+
+document.getElementById("options").innerHTML = optionsHTML
+
+}
+
+function selectAnswer(index){
+
+if(index === questions[currentQuestion].answer){
+score++
+}
+
+nextQuestion()
+
+}
+
+function nextQuestion(){
+
+currentQuestion++
+
+if(currentQuestion >= questions.length){
+
+alert("Your Score: "+score+" / "+questions.length)
+
+location.reload()
+
+}else{
+
+loadQuestion()
+
+}
+
+}
+
+loadQuestion()
